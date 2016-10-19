@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=900, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Help Dialog</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- General external styling -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+	<!-- ADAPTIVE SIZING CONTAINER -->
+	<div class="container top-pad">
+		<div class="panel panel-default">
+			
+		<div class="panel-heading"><h3 class="panel-title"><img src="img/brunel-logo-60.png" width="200px" height="75px" class="center-block"/></h3></div>
+			
+		<div class="panel-body">
+	  		<div class="row">
+	      		<div class="col-sm-2"></div>
+	        	<div class="col-sm-8 top-pad">
+		        	<div id="content"></div> 
+		        	<!-- ABOUT CONTENT STARTS HERE -->
+		        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> About</h4>
+		        	<p>
+		        		This system allows you to download your timetable in the two most common calendar formats known:
+		        		<ul>
+		        			<li><strong>CSV</strong> - a comma separated value table: used by most Calendar systems including Google.</li>
+		        			<li><strong>ICS</strong> - iCalendar&trade; mostly used by Apple Inc. systems, but compatible with most modern agendas.</li>
+		        		</ul>
+		        		After you export you will be required to import into your default calendar manager.
+		        	</p>
+		        	
+		        	<!-- HOW TO USE STARTS HERE -->
+		        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> How to Use</h4>
+	        		<ol class="top-marg">
+		        		<li>In the extension click on <span class="label label-primary">Open Timetable</span></li>
+		        		<li>Enter your credentials on the login page*</li>
+		        		<li>On the left hand side click on My Timetable</li>
+		        		<li>Now select a single week (see warning #1)</li>
+		        		<li>Change the type of report to List Timetable (see warning #2)</li>
+		        		<li>On the extension select your download format and click <span class="label label-success">Download</span></li>
+	        		</ol><!-- END <ol class="top-marg"> -->
+
+		        	<div class="alert alert-warning" role="alert">
+		        	<p class="top-marg"><span class="label label-warning">Warning #1</span> You must select a <strong> single week</strong>, date ranges exceeding the length of a week will not work!</p>
+		        	<p class="top-marg"><span class="label label-warning">Warning #2</span> You must use <strong>List Timetable</strong> as the type of report!</p>
+		        	</div> <!-- END <div class="alert alert-warning role="alert"> -->
+
+		        	<!-- HOW TO IMPORT STARTS HERE -->
+		        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> How to Import to Calendar</h4>
+		        	<ul class="top-marg">
+		        		<li><a href="https://support.google.com/calendar/answer/37118?hl=en">Click here</a> for import instructions to Google.</li>
+		        		<li><a href="https://support.apple.com/kb/PH11524?locale=en_US">Click here</a> for import instructions to iCloud calendar</li>
+		        	</ul> <!-- END <ul class="top-marg"> -->
+
+		        	<!-- TIPS STARTS HERE -->
+		        	<h4><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Tips &amp; Recommended Practises</h4>
+		        	<p class="top-marg">Run this every week late on Sunday as the University sometimes may change schedules last moment.</p>
+		        	<p>Google Calendar users:  <a href="https://href.li/?https://support.google.com/calendar/answer/37095?hl=en">create an additional calendar</a>, this allows you to set custom items such as event colours &amp; <a href="https://href.li/?https://support.google.com/calendar/answer/37095?hl=en">notifications</a>.</p> 
+		        	
+		        	<!-- CREDITS AND DISCLAIMERS START HERE -->
+		        	<h4><span class="glyphicon glyphicon-info-sign top-marg" aria-hidden="true"></span> Credits &amp; Disclaimer</h4>
+
+		        	<p>This tool was written by <a href="http://people.brunel.ac.uk/~cs16ddc">Dominic Cobo</a> due to his laziness for checking the Brunel's Timetable website &amp; an alternative to the shitty alternatives out there.</p>
+		        	<p>Credits due to <a href="https://github.com/eligrey/">Eli Grey</a> for <a href="https://github.com/eligrey/FileSaver.js">FileSaver.js</a> &amp; <a href="https://github.com/eligrey/Blob.js/">blob.js</a> libraries.</p>
+		        	<p>Credits due to <a href="https://github.com/nwcell/">Travis Krause (nwcell)</a> for his <a href="https://github.com/nwcell/ics.js/">ics.js</a> library.</p>
+		        	<p>*The tool is in no way affiliated with the University and does not store/harvest any personal data at all.</p>
+		        	<p>The Brunel University London logo belongs exclusively to Brunel University London</p>
+		        	<p>The source code is available at <a href="https://github.com/dominiccobo/BrunelTimetableDownload">https://github.com/dominiccobo/BrunelTimetableDownload</a> and may be built upon provided credits are given where due.</p>
+
+	        	</div> <!-- END <div class="row"> -->
+	        	<div class="col-sm-2"></div>
+
+	  		</div> <!-- END <div class="row"> -->
+		</div> <!-- END <div class="panel-body"> -->
+		<button id="closeHelp" class="btn btn-danger btn-xs center-block bot-marg">Close</button>
+		</div> <!-- END <div class="panel panel-default"> -->
+	</div> <!-- END <div class="container top-pad"> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/help.js"></script>
+  </body>
+</html>

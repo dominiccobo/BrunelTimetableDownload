@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=400, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Brunel Schedule Timetable</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- General external styling -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+	<!-- ADAPTIVE SIZING CONTAINER -->
+	<div class="container top-pad">
+		<div class="panel panel-default">
+			
+		<div class="panel-heading"><h3 class="panel-title"><img src="img/brunel-logo-60.png" width="150px" height="50px" class="center-block"/></h3></div>
+			
+		<div class="panel-body">
+	  		<div class="row">
+	      		<div class="col-sm-3"></div>
+	        	<div class="col-sm-6">
+		        	<div id="content"></div> 
+		        	
+		        	<!--
+						FORM ELEMENT: BUTTON
+						BUTTON ID: openTimetable 
+						ACTION: Calls openTimetable() function.
+		        	-->
+
+		        	<button id="openTimetable" onclick="" class="btn btn-primary btn-md btn-block">Open Timetable</button>
+
+					<!-- 
+						FORM ELEMENT: SELECTION FOR OUTPUT FORMAT 
+						FORM ID: output-type
+					-->
+		        	<select id="format" class="form-control top-marg">
+					  <option value="1">csv (Google)</option>
+					  <option value="2">ics (Apple)</option>
+					</select>
+
+					<!--
+						FORM ELEMENT: BUTTON
+						BUTTON ID: download
+						ACTION: triggers runFilter.js with appropriate paramater.
+					-->
+					
+		        	<button id="download" class="btn btn-success btn-md btn-block top-marg">Download</button>
+
+		        	<!--
+						FORM ELEMENT: BUTTON
+						BUTTON ID: download
+						ACTION: triggers runFilter.js with appropriate paramater.
+					-->
+					<a href="help.html" target="_blank" class="btn btn-info btn-xs btn-block">Help</a>
+		        	<!--<button id="info" class="btn btn-info btn-xs btn-block top-marg">Help</button>-->
+	        	</div> <!-- END <div class="row"> -->
+	        	
+	        	<div class="col-sm-2"></div>
+
+	  		</div> <!-- END <div class="row"> -->
+		</div> <!-- END <div class="panel-body"> -->
+		</div> <!-- END <div class="panel panel-default"> -->
+	</div> <!-- END <div class="container top-pad"> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Include standard loaded scripts -->
+    <script src="js/popup.js"></script>
+  </body>
+</html>
